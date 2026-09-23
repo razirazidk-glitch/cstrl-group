@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSTRL Group ApS | Investeringer, Sportsarealer, Sponsoraftaler & Sportsudstyr</title>
+  <meta name="description" content="CSTRL Group ApS (CVR: 45778444, Frederiksberg). Vi investerer i selskaber, varetager sportsarealer i Danmark og Europa, forhandler sponsoraftaler for firmaer og skaffer markedets bedste aftaler på sportsudstyr.">
+  <meta name="keywords" content="CSTRL Group, investeringer, sportsarealer danmark europa, sponsoraftaler firmaer, sportsudstyr aftaler, CVR 45778444, Frederiksberg">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="CSTRL Group ApS | Investeringer, Sportsarealer, Sponsoraftaler & Sportsudstyr">
+  <meta property="og:description" content="Dansk holdingselskab. Investeringer i virksomheder, sportsarealer i Danmark og Europa, sponsoraftaler for firmaer og markedets bedste aftaler på sportsudstyr.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              deep: '#08090C',
+              card: '#0F1218',
+              elevated: '#161B23',
+              emerald: '#00F59B',
+              cyan: '#00D2FF',
+              blue: '#3B82F6',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#08090C] text-slate-100 antialiased selection:bg-[#00F59B] selection:text-black relative">
+
+  <!-- Atmospheric Glow Orbs -->
+  <div class="glow-orb-top"></div>
+  <div class="glow-orb-blue"></div>
+
+  <!-- 1. Top Infobar -->
+  <header class="w-full bg-[#050608] border-b border-white/5 py-2.5 px-4 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-2 font-medium text-white">
+          <span class="w-2 h-2 rounded-full bg-[#00F59B] animate-pulse"></span>
+          CSTRL Group ApS
+        </span>
+        <span class="text-gray-600">|</span>
+        <span class="text-gray-300">CVR: <strong class="text-white font-mono">45778444</strong></span>
+        <span class="hidden md:inline text-gray-600">|</span>
+        <span class="hidden md:inline text-gray-400">Glahns Allé 39, 2000 Frederiksberg</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:contact@cstrl.info" class="hover:text-[#00F59B] transition-colors flex items-center gap-1.5 text-gray-200">
+          <svg class="w-3.5 h-3.5 text-[#00F59B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <span class="font-mono font-medium">contact@cstrl.info</span>
+        </a>
+        <div class="flex items-center gap-2 pl-3 border-l border-white/10">
+          <button id="sound-toggle-btn" class="p-1 rounded text-[#00F59B] hover:text-white transition-colors" title="Lyd til/fra">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+          </button>
+          <button id="lang-toggle-btn" class="px-2 py-0.5 rounded text-[11px] font-semibold bg-white/10 hover:bg-white/20 text-white transition-colors">
+            🇩🇰 DA
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hovednavigation -->
+  <nav class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00F59B] to-[#00D2FF] p-[1.5px]">
+          <div class="w-full h-full bg-[#08090C] rounded-[9px] flex items-center justify-center">
+            <span class="font-heading font-extrabold text-base tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-[#00F59B] to-[#00D2FF]">
+              C•S
+            </span>
+          </div>
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-xl tracking-wider text-white group-hover:text-[#00F59B] transition-colors">
+            CSTRL <span class="text-[#00F59B]">GROUP</span>
+          </span>
+          <span class="block text-[10px] tracking-widest text-gray-400 uppercase -mt-1 font-mono">
+            ApS • Frederiksberg
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#tilbud" data-i18n="nav_offerings" class="hover:text-[#00F59B] transition-colors">Hvad Vi Tilbyder</a>
+        <a href="#investeringer" data-i18n="nav_investments" class="hover:text-[#00F59B] transition-colors">Investeringer</a>
+        <a href="#sportsarealer" data-i18n="nav_facilities" class="hover:text-[#00F59B] transition-colors">Sportsarealer</a>
+        <a href="#sponsoraftaler" data-i18n="nav_sponsorship" class="hover:text-[#00F59B] transition-colors">Sponsoraftaler</a>
+        <a href="#sportsudstyr" data-i18n="nav_equipment" class="hover:text-[#00F59B] transition-colors">Sportsudstyr</a>
+        <a href="#om-os" data-i18n="nav_about" class="hover:text-[#00F59B] transition-colors">Om Os</a>
+      </div>
+
+      <!-- CTA Knap -->
+      <div class="flex items-center gap-3">
+        <a href="#kontakt" data-i18n="btn_contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-xs text-black bg-[#00F59B] hover:bg-[#00D2FF] transition-all duration-300 shadow-lg shadow-[#00F59B]/20 hover:scale-105 active:scale-95">
+          <span>Kontakt Os</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+
+        <!-- Mobil Menu Trigger -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl bg-white/5 border border-white/10 text-gray-300 hover:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobil Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#0A0D12] border-b border-white/10 px-6 py-5 space-y-3">
+      <a href="#tilbud" class="block text-base font-medium text-gray-200 hover:text-[#00F59B]">Hvad Vi Tilbyder</a>
+      <a href="#investeringer" class="block text-base font-medium text-gray-200 hover:text-[#00F59B]">Investeringer i selskaber</a>
+      <a href="#sportsarealer" class="block text-base font-medium text-gray-200 hover:text-[#00F59B]">Sportsarealer i DK & Europa</a>
+      <a href="#sponsoraftaler" class="block text-base font-medium text-gray-200 hover:text-[#00F59B]">Sponsoraftaler for firmaer</a>
+      <a href="#sportsudstyr" class="block text-base font-medium text-gray-200 hover:text-[#00F59B]">Bedste aftaler på sportsudstyr</a>
+      <a href="#om-os" class="block text-base font-medium text-gray-200 hover:text-[#00F59B]">Om CSTRL Group ApS</a>
+      <a href="#kontakt" class="block text-base font-medium text-[#00F59B]">Kontakt & Dialog</a>
+    </div>
+  </nav>
+
+  <!-- 3. HERO SEKTION (Simpel, klar og generel) -->
+  <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-4xl mx-auto space-y-6">
+        
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white/5 border border-[#00F59B]/30 backdrop-blur-md text-[#00F59B]">
+          <span class="w-2 h-2 rounded-full bg-[#00F59B] animate-pulse"></span>
+          <span data-i18n="hero_badge">CSTRL Group ApS • CVR 45778444 • Frederiksberg</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-[1.15]">
+          Investeringer, sportsarealer, sponsoraftaler og <span class="gradient-text-emerald">sportsudstyr</span>
+        </h1>
+
+        <p data-i18n="hero_desc" class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          CSTRL Group ApS er et dansk holdingselskab. Vi investerer i andre selskaber, varetager sportsarealer i Danmark og Europa, forhandler værdiskabende sponsoraftaler for firmaer og sikrer markedets bedste aftaler på sportsudstyr gennem stærke leverandørsamarbejder.
+        </p>
+
+        <!-- CTA Knapper -->
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <a href="#tilbud" data-i18n="hero_btn_1" class="px-7 py-3.5 rounded-xl font-bold text-sm bg-[#00F59B] hover:bg-[#00D2FF] text-black transition-all duration-300 shadow-xl shadow-[#00F59B]/25 hover:scale-105 active:scale-95 flex items-center gap-2">
+            <span>Se Hvad Vi Tilbyder</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+          </a>
+          
+          <a href="#kontakt" data-i18n="hero_btn_2" class="px-7 py-3.5 rounded-xl font-bold text-sm bg-white/10 hover:bg-white/20 text-white border border-white/10 transition-all duration-300 backdrop-blur-md flex items-center gap-2">
+            <span>Kontakt For Samarbejde</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- De 4 søjler Hurtig-oversigt (Kort-grid) -->
+      <div id="tilbud" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-16">
+        
+        <!-- Kort 1: Investeringer -->
+        <a href="#investeringer" class="glass-panel rounded-2xl p-6 border border-white/10 card-hover flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-[#00F59B] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 group-hover:text-[#00F59B] transition-colors">
+              Investeringer i selskaber
+            </h3>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Vi investerer risikovillig kapital i lovende virksomheder og bidrager aktivt med forretningsudvikling og netværk.
+            </p>
+          </div>
+          <div class="pt-4 flex items-center gap-1.5 text-xs font-semibold text-[#00F59B]">
+            <span>Læs om investeringer</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+
+        <!-- Kort 2: Sportsarealer -->
+        <a href="#sportsarealer" class="glass-panel rounded-2xl p-6 border border-white/10 card-hover flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-[#00D2FF] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 group-hover:text-[#00D2FF] transition-colors">
+              Sportsarealer i DK & Europa
+            </h3>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Vi varetager, udvikler og driver sportsarealer og faciliteter i Danmark og på tværs af europæiske lokationer.
+            </p>
+          </div>
+          <div class="pt-4 flex items-center gap-1.5 text-xs font-semibold text-[#00D2FF]">
+            <span>Læs om sportsarealer</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+
+        <!-- Kort 3: Sponsoraftaler -->
+        <a href="#sponsoraftaler" class="glass-panel rounded-2xl p-6 border border-white/10 card-hover flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 group-hover:text-purple-300 transition-colors">
+              Sponsoraftaler for firmaer
+            </h3>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Vi forhandler, skræddersyr og administrerer sponsoraftaler, der sikrer virksomheder maksimal synlighed og ROI.
+            </p>
+          </div>
+          <div class="pt-4 flex items-center gap-1.5 text-xs font-semibold text-purple-400">
+            <span>Læs om sponsoraftaler</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+
+        <!-- Kort 4: Sportsudstyr -->
+        <a href="#sportsudstyr" class="glass-panel rounded-2xl p-6 border border-white/10 card-hover flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 group-hover:text-amber-300 transition-colors">
+              Aftaler på sportsudstyr
+            </h3>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Vi skaffer de bedste aftaler og betingelser på sportsudstyr i samarbejde med førende producenter og udbydere.
+            </p>
+          </div>
+          <div class="pt-4 flex items-center gap-1.5 text-xs font-semibold text-amber-400">
+            <span>Sådan skaffer vi aftaler</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. DYBDEGÅENDE SEKTION 1: INVESTERINGER I ANDRE SELSKABER -->
+  <section id="investeringer" class="py-20 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 border border-emerald-500/20 text-[#00F59B]">
+            Investeringer & Venture
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Vi investerer i andre selskaber
+          </h2>
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Hos CSTRL Group ApS investerer vi i lovende selskaber med stærke forretningsmodeller og potentiale for vækst. Vi ser os selv som mere end blot en passiv kapitalkilde – vi er en engageret strategisk partner.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="glass-panel rounded-xl p-4 border border-white/10 flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-[#00F59B] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Vækstkapital & Risikovillig Investering</h4>
+                <p class="text-xs text-gray-400 mt-1">Vi stiller kapital til rådighed til ekspansion, teknologiudvikling, organisationsopbygning og markedsekspansion.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-xl p-4 border border-white/10 flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-[#00F59B] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Strategisk Sparring & Erhvervsnetværk</h4>
+                <p class="text-xs text-gray-400 mt-1">Vi åbner døre til beslutningstagere, kommercielle partnere og branchekontakter i både Danmark og internationalt.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-xl p-4 border border-white/10 flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-[#00F59B] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Langsigtet Værdiskabelse</h4>
+                <p class="text-xs text-gray-400 mt-1">Vi arbejder tæt sammen med stiftere og ledelser med et fælles mål om sund, bæredygtig og rentabel udvikling.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="selectContactSubject('investment', 'Vi søger en investor/kapitalpartner til vores selskab.')" class="px-6 py-3 rounded-xl text-xs font-bold bg-[#00F59B] hover:bg-[#00D2FF] text-black transition-all flex items-center gap-2">
+              <span>Præsenter et selskab / Tag dialog</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="glass-panel rounded-3xl p-3 border border-white/10 overflow-hidden">
+            <div class="h-80 sm:h-96 rounded-2xl overflow-hidden relative">
+              <img src="assets/images/sports_investment_tech.jpg" alt="CSTRL Group Investeringsmøde" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#08090C] via-transparent to-black/30"></div>
+              <div class="absolute bottom-4 left-4 right-4 glass-panel rounded-xl p-4 border border-white/10">
+                <span class="text-xs font-bold text-[#00F59B] uppercase tracking-wider block mb-1">Investeringsfokus</span>
+                <span class="text-sm text-gray-200">Aktiv kapital & partnerskaber til ambitiøse selskaber</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. DYBDEGÅENDE SEKTION 2: SPORTSAREALER I DANMARK & EUROPA -->
+  <section id="sportsarealer" class="py-20 border-t border-white/5 bg-[#0B0E14]/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 order-2 lg:order-1">
+          <div class="glass-panel rounded-3xl p-3 border border-white/10 overflow-hidden">
+            <div class="h-80 sm:h-96 rounded-2xl overflow-hidden relative">
+              <img src="assets/images/hero_sports_facility.jpg" alt="Moderne Sportsarealer i Danmark og Europa" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#08090C] via-transparent to-black/30"></div>
+              <div class="absolute bottom-4 left-4 right-4 glass-panel rounded-xl p-4 border border-white/10">
+                <span class="text-xs font-bold text-[#00D2FF] uppercase tracking-wider block mb-1">Arealer & Faciliteter</span>
+                <span class="text-sm text-gray-200">Moderne sports- og bevægelsesrammer i Danmark og Europa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 border border-cyan-500/20 text-[#00D2FF]">
+            Arealer & Facilitering
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Sportsarealer i Danmark og Europa
+          </h2>
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Vi rådgiver om, varetager, udvikler og formidler sportsarealer til idræt, ketchersport, padel og multiarenaer. Vores aktiviteter spænder over både det danske marked og udvalgte europæiske lokationer.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="glass-panel rounded-xl p-4 border border-white/10 flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-[#00D2FF] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Udvikling & Etablering af Arealer</h4>
+                <p class="text-xs text-gray-400 mt-1">Vi hjælper med at identificere, planlægge og udvikle attraktive arealer til idræt og motion med fokus på funktionalitet og bæredygtighed.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-xl p-4 border border-white/10 flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-[#00D2FF] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Drift, Formidling & Samarbejder</h4>
+                <p class="text-xs text-gray-400 mt-1">Vi indgår i partnerskaber med kommuner, grundejere, klubber og investorer om effektiv anvendelse og drift af sportsarealer.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-xl p-4 border border-white/10 flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-[#00D2FF] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Pan-Europæisk Rækkevidde</h4>
+                <p class="text-xs text-gray-400 mt-1">Fra hjemmemarkedet i Danmark til internationale sportsdestinationer i Europa skaber vi sammenhængende sportsrammer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="selectContactSubject('facilities', 'Vi ønsker dialog om et sportsareal eller facilitetssamarbejde i Danmark/Europa.')" class="px-6 py-3 rounded-xl text-xs font-bold bg-[#00D2FF] hover:bg-[#00F59B] text-black transition-all flex items-center gap-2">
+              <span>Hør mere om sportsarealer</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. DYBDEGÅENDE SEKTION 3: SPONSORAFTALER FOR VIRKSOMHEDER -->
+  <section id="sponsoraftaler" class="py-20 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 border border-purple-500/20 text-purple-300">
+          Kommercielle Partnerskaber
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+          Vi kan stå for sponsoraftaler for firmaer
+        </h2>
+        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+          Et sponsorat skal give reel forretningsværdi, synlighed og meningsfulde relationer. CSTRL Group ApS forhandler, sammensætter og varetager skræddersyede sponsoraftaler for virksomheder i sportens verden.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 card-hover space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-mono font-bold text-sm">
+            01
+          </div>
+          <h3 class="text-lg font-bold font-heading text-white">Strategi & Målgruppe-Match</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Vi afdækker din virksomheds kommercielle mål og identificerer de idrætsgrene, arealer eller formater, der rammer netop din målgruppe med størst gennemslagskraft.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 card-hover space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-mono font-bold text-sm">
+            02
+          </div>
+          <h3 class="text-lg font-bold font-heading text-white">Forhandling & Kontraktoptimering</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Vi varetager den professionelle forhandling og sikrer, at aftalen indeholder de rette rettigheder, optimal eksponering, events og favorable kommercielle vilkår.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 card-hover space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-mono font-bold text-sm">
+            03
+          </div>
+          <h3 class="text-lg font-bold font-heading text-white">Aktivering & Løbende Opfølgning</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Vi hjælper med at aktivere sponsoratet i praksis – fra branding på baner og digital synlighed til B2B arrangementer – og evaluerer løbende effekten.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-10 p-6 glass-panel-glow rounded-2xl border border-purple-500/20 text-center max-w-2xl mx-auto">
+        <h4 class="text-base font-bold text-white mb-2">Ønsker jeres firma en stærk sponsoraftale?</h4>
+        <p class="text-xs text-gray-300 mb-4">
+          Lad os drøfte jeres ønsker og sammensætte en model, der matcher jeres budget og målsætninger.
+        </p>
+        <button onclick="selectContactSubject('sponsorship', 'Vi er en virksomhed, der ønsker dialog om sponsoraftaler og eksponering.')" class="px-6 py-2.5 rounded-xl font-bold text-xs bg-purple-400 hover:bg-purple-300 text-black transition-all">
+          Tag en uforpligtende sponsorsnak
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. DYBDEGÅENDE SEKTION 4: SPORTSUDSTYR – SÅDAN SKAFFER VI DE BEDSTE AFTALER -->
+  <section id="sportsudstyr" class="py-20 border-t border-white/5 bg-[#0B0E14]/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 border border-amber-500/20 text-amber-300">
+            Sportsudstyr & Leverandørsamarbejder
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Sådan skaffer vi de bedste aftaler til sportsudstyr
+          </h2>
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Vi sælger og formidler sportsudstyr til klubber, centre, skoler og virksomheder. I stedet for standardpriser udnytter vi vores position og brede netværk til at forhandle markedets stærkeste aftaler hjem.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <div class="glass-panel rounded-xl p-4 border border-white/10 space-y-2">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-xs">
+                1
+              </div>
+              <h4 class="text-sm font-bold text-white">Samarbejde med førende udbydere</h4>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Vi har direkte partnerskaber og løbende dialog med en række anerkendte internationale udstyrs- og baneproducenter uden fordyrende forhandlermellemled.
+              </p>
+            </div>
+
+            <div class="glass-panel rounded-xl p-4 border border-white/10 space-y-2">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-xs">
+                2
+              </div>
+              <h4 class="text-sm font-bold text-white">Stordrifts- & volumenfordele</h4>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Ved at konsolidere indkøb og udnytte stærke forhandlingsvolumener opnår vi rabatter og leveringsvilkår, som enkeltstående klubber eller centre sjældent har adgang til.
+              </p>
+            </div>
+
+            <div class="glass-panel rounded-xl p-4 border border-white/10 space-y-2">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-xs">
+                3
+              </div>
+              <h4 class="text-sm font-bold text-white">Skræddersyet behovsafdækning</h4>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Vi gennemgår jeres faktiske behov og rådgiver om udstyr med optimal holdbarhed, brugervenlighed og pris, så I undgår fejlinvesteringer.
+              </p>
+            </div>
+
+            <div class="glass-panel rounded-xl p-4 border border-white/10 space-y-2">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-xs">
+                4
+              </div>
+              <h4 class="text-sm font-bold text-white">Komplette helhedsløsninger</h4>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Vi dækker hele spektret: Fra baneinventar, net og belysning til bolde, ketchere, træningsudstyr og specialtilpasset klubbeklædning.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="pt-2">
+            <button onclick="selectContactSubject('equipment', 'Vi ønsker at høre mere om muligheden for en fordelagtig aftale på sportsudstyr.')" class="px-6 py-3 rounded-xl text-xs font-bold bg-amber-400 hover:bg-amber-300 text-black transition-all flex items-center gap-2">
+              <span>Indhent uforpligtende udstyrsaftale</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="glass-panel rounded-3xl p-3 border border-white/10 overflow-hidden">
+            <div class="h-80 sm:h-96 rounded-2xl overflow-hidden relative">
+              <img src="assets/images/sports_equipment_gear.jpg" alt="Professionelt Sportsudstyr og Leverandøraftaler" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#08090C] via-transparent to-black/30"></div>
+              <div class="absolute bottom-4 left-4 right-4 glass-panel rounded-xl p-4 border border-white/10">
+                <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block mb-1">Leverandørnetværk</span>
+                <span class="text-sm text-gray-200">De stærkeste aftaler gennem direkte samarbejde med førende producenter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. OM CSTRL GROUP APS & CVR STAMDATA -->
+  <section id="om-os" class="py-20 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/5 border border-white/10 text-[#00F59B]" data-i18n="about_tag">
+            Virksomhedsoplysninger
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight" data-i18n="about_title">
+            Om CSTRL Group ApS
+          </h2>
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            CSTRL Group ApS er et dansk holdingselskab med base på Frederiksberg. Vi arbejder professionelt på tværs af investeringer, idrætsinfrastruktur, sponsorater og udstyr for at skabe sunde samarbejder og målbare resultater.
+          </p>
+
+          <!-- Registrerede Stamdata Box -->
+          <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-3">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider font-mono border-b border-white/10 pb-2">
+              Officielle Virksomhedsoplysninger
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div>
+                <span class="text-gray-400 block">Selskabsnavn:</span>
+                <span class="font-bold text-white text-sm">CSTRL Group ApS</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block">CVR-nummer:</span>
+                <span class="font-bold text-[#00F59B] text-sm font-mono">45778444</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block">Adresse:</span>
+                <span class="font-medium text-white">Glahns Allé 39, 4. tv.<br>2000 Frederiksberg</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block">E-mail:</span>
+                <a href="mailto:contact@cstrl.info" class="font-medium text-[#00D2FF] hover:underline font-mono">contact@cstrl.info</a>
+              </div>
+              <div>
+                <span class="text-gray-400 block">Status:</span>
+                <span class="inline-flex items-center gap-1 text-emerald-400 font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Normal / Aktiv
+                </span>
+              </div>
+              <div>
+                <span class="text-gray-400 block">Branchekode:</span>
+                <span class="text-gray-300">749990 Andre liberale, videnskabelige & tekniske</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-xs text-gray-500">
+            * Virksomheden er registreret med reklamebeskyttelse i CVR.
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-6 space-y-4">
+          <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-3">
+            <h4 class="text-base font-bold text-white">Vores Værdier & Tilgang</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Vi prioriterer gennemsigtighed, ordentlighed og personlig dialog i alle forretningsforbindelser. Uanset om det handler om kapitalinvestering, etablering af sportsarealer eller forhandling af udstyrs- og sponsoraftaler, fokuserer vi på holdbare og langsigtede partnerskaber.
+            </p>
+          </div>
+
+          <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-3">
+            <h4 class="text-base font-bold text-white">Et Samlet Økosystem</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Ved at koble investering, fysiske arealer, udstyr og sponsorer sammen under ét tag opnår vi unikke synergier til gavn for alle involverede parter i Danmark og Europa.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. KONTAKT & DIALOG (Simpel & Ren Formular) -->
+  <section id="kontakt" class="py-20 border-t border-white/5 bg-[#0B0E14]/60 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/5 border border-white/10 text-[#00F59B]" data-i18n="contact_tag">
+            Tag Første Skridt
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight" data-i18n="contact_title">
+            Kontakt Os For En Uforpligtende Dialog
+          </h2>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Har du et selskab med behov for en investor, ønsker du at drøfte sportsarealer, søger jeres firma en stærk sponsoraftale, eller vil I have markedets bedste vilkår på sportsudstyr? Vi er klar til at tage en uforpligtende samtale.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5">
+              <div class="w-10 h-10 rounded-lg bg-[#00D2FF]/10 text-[#00D2FF] flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <div>
+                <div class="text-xs text-gray-400">E-mail</div>
+                <a href="mailto:contact@cstrl.info" class="text-base font-bold text-white hover:text-[#00D2FF] transition-colors">contact@cstrl.info</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5">
+              <div class="w-10 h-10 rounded-lg bg-white/10 text-white flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <div>
+                <div class="text-xs text-gray-400">Adresse</div>
+                <div class="text-sm font-semibold text-white">Glahns Allé 39, 4. tv., 2000 Frederiksberg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div class="lg:col-span-7">
+          <form id="main-contact-form" class="glass-panel-glow rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-name" class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1.5">Navn *</label>
+                <input type="text" id="contact-name" required placeholder="Dit fulde navn" class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00F59B] text-sm">
+              </div>
+              <div>
+                <label for="contact-company" class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1.5">Virksomhed / Klub</label>
+                <input type="text" id="contact-company" placeholder="Firmanavn eller klub (valgfrit)" class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00F59B] text-sm">
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-email" class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1.5">E-mail *</label>
+              <input type="email" id="contact-email" required placeholder="din@email.dk" class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00F59B] text-sm">
+            </div>
+
+            <div>
+              <label for="contact-subject" class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1.5">Hvad drejer henvendelsen sig om? *</label>
+              <select id="contact-subject" class="w-full px-4 py-3 rounded-xl bg-black/80 border border-white/10 text-white focus:outline-none focus:border-[#00F59B] text-sm">
+                <option value="investment">Investering i selskab / Vækstkapital</option>
+                <option value="facilities">Sportsarealer i Danmark eller Europa</option>
+                <option value="sponsorship">Sponsoraftale for firma</option>
+                <option value="equipment">Aftale på sportsudstyr</option>
+                <option value="general">Andet / Generel henvendelse</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1.5">Besked *</label>
+              <textarea id="contact-message" rows="4" required placeholder="Beskriv kort hvad I ønsker eller har brug for..." class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00F59B] text-sm"></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" data-i18n="contact_btn" class="w-full py-4 px-6 rounded-xl font-bold text-sm bg-gradient-to-r from-[#00F59B] to-[#00D2FF] text-black hover:opacity-95 transition-all shadow-xl shadow-[#00F59B]/25 flex items-center justify-center gap-2">
+                <span>Send Besked</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. FOOTER -->
+  <footer class="bg-[#050608] border-t border-white/10 py-12 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="space-y-3">
+          <span class="font-heading font-extrabold text-lg text-white">
+            CSTRL <span class="text-[#00F59B]">GROUP</span> ApS
+          </span>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Dansk selskab med fokus på investeringer i andre selskaber, sportsarealer i Danmark og Europa, sponsoraftaler for firmaer og de bedste aftaler på sportsudstyr.
+          </p>
+          <div class="text-[11px] font-mono text-gray-500">
+            CVR: 45778444 • Frederiksberg
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Hvad Vi Tilbyder</h4>
+          <ul class="space-y-2">
+            <li><a href="#investeringer" class="hover:text-[#00F59B] transition-colors">Investeringer i selskaber</a></li>
+            <li><a href="#sportsarealer" class="hover:text-[#00F59B] transition-colors">Sportsarealer i Danmark & Europa</a></li>
+            <li><a href="#sponsoraftaler" class="hover:text-[#00F59B] transition-colors">Sponsoraftaler for firmaer</a></li>
+            <li><a href="#sportsudstyr" class="hover:text-[#00F59B] transition-colors">Aftaler på sportsudstyr</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Kontakt & Adresse</h4>
+          <ul class="space-y-2">
+            <li>Glahns Allé 39, 4. tv.</li>
+            <li>2000 Frederiksberg, Danmark</li>
+            <li><a href="mailto:contact@cstrl.info" class="text-white hover:text-[#00F59B] transition-colors">contact@cstrl.info</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Virksomhedsstatus</h4>
+          <ul class="space-y-2 text-[11px]">
+            <li class="text-gray-300">CVR: 45778444 (Aktiv / Normal)</li>
+            <li class="text-gray-400">Branche: 749990 Andre liberale, videnskabelige & tekniske tjenesteydelser</li>
+            <li class="text-gray-500 pt-1">Virksomheden er reklamebeskyttet</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-500">
+        <div>
+          © 2026 CSTRL Group ApS. CVR-nr: 45778444. Alle rettigheder forbeholdes.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:underline">Privatlivspolitik</a>
+          <a href="#" class="hover:underline">Betingelser</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 11. SUCCESS MODAL -->
+  <div id="success-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md items-center justify-center p-4">
+    <div class="glass-panel-glow rounded-3xl max-w-md w-full p-6 sm:p-8 border border-white/10 text-center space-y-4">
+      <div class="w-14 h-14 mx-auto rounded-2xl bg-[#00F59B]/10 border border-[#00F59B]/30 text-[#00F59B] flex items-center justify-center">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+      </div>
+      <h3 id="success-modal-title" class="text-xl font-bold font-heading text-white">Tak for din besked</h3>
+      <p id="success-modal-desc" class="text-xs sm:text-sm text-gray-300 leading-relaxed"></p>
+      <div class="p-3 rounded-xl bg-black/50 border border-white/10">
+        <span class="text-[11px] text-gray-500 block">Sagsreference ID:</span>
+        <span id="success-modal-ref" class="text-xs font-mono font-bold text-[#00F59B]">CSTRL-REF</span>
+      </div>
+      <button onclick="closeSuccessModal()" class="w-full py-2.5 rounded-xl font-bold text-xs bg-white/10 hover:bg-white/20 text-white border border-white/10 transition-colors">
+        Luk Vindu
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
